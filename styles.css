@@ -1,0 +1,134 @@
+/* Resetting margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+
+:root {
+  --font-family-crimson-pro-regular: "Crimson Pro", serif;
+  --font-family-crimson-pro-black: "Crimson Pro Black", serif;
+  --font-family-fascinate: "Fascinate", system-ui;
+  --primary-color: #8fb6c2;
+  --secondary-color: #06270b;
+  --tertiary-color: #833f00;
+  --light-base: #cfcfcf;
+  --dark-base: #262626;
+}
+
+body {
+  font-family: var(--font-family-crimson-pro-regular);
+}
+
+h1 {
+  font-family: var(--font-family-fascinate);
+  font-size: 3em;
+  color: var(--secondary-color);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+h2 {
+  color: var(--dark-base);
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul a {
+  font-family: var(--font-family-crimson-pro-regular);
+  font-size: 2em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px;
+  background-color: var(--light-base);
+  height: 100vh;
+}
+
+section#section-404 {
+  text-align: center;
+  margin-top: 100px;
+}
+h2.page-404 {
+  font-family: var(--font-family-crimson-pro-black);
+  font-size: 5em;
+}
+
+p.page-404 {
+  font-family: var(--font-family-crimson-pro-regular);
+  font-size: 1.2em;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Contact Form Styling */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
