@@ -70,6 +70,15 @@ main {
   height: 100vh;
 }
 
+section#hello-world {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; */
+  gap: 1em;
+}
+
 section#section-404 {
   text-align: center;
   margin-top: 100px;
