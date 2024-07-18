@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap"); */
 
 :root {
   --font-family-crimson-pro-regular: "Crimson Pro", serif;
@@ -22,21 +22,6 @@
 
 body {
   font-family: var(--font-family-crimson-pro-regular);
-}
-
-h1 {
-  font-family: var(--font-family-fascinate);
-  font-size: 3em;
-  color: var(--secondary-color);
-}
-
-h1 a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-h2 {
-  color: var(--dark-base);
 }
 
 header {
@@ -70,13 +55,38 @@ main {
   height: 100vh;
 }
 
-section#hello-world {
+h1 {
+  font-family: var(--font-family-fascinate);
+  font-size: 3em;
+  color: var(--secondary-color);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+h2 {
+  color: var(--dark-base);
+}
+
+section#about {
   text-align: center;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   /* flex-direction: column; */
   gap: 1em;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 section#section-404 {
@@ -95,7 +105,7 @@ p.page-404 {
 
 /* Responsive Images */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -105,39 +115,4 @@ img {
     flex-direction: column;
     text-align: center;
   }
-}
-
-/* Contact Form Styling */
-form {
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-form input[type="submit"] {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: 0;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-footer {
-  background: var(--primary-color);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
