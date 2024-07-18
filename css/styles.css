@@ -17,10 +17,6 @@
   box-sizing: border-box;
 }
 
-.fa-solid {
-  font-size: 1.5em;
-}
-
 /* Tipography */
 body {
   font-family: var(--font-family-crimson-pro-regular);
@@ -127,6 +123,19 @@ h2 {
   flex-wrap: wrap;
   gap: 1em;
 }
+
+.about-skills ul li {
+  font-size: 2em;
+  /* background: var(--secondary-color); */
+  color: var(--dark-base);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid var(--secondary-color);
+}
 /* End of About Section */
 
 /* Projects Section */
@@ -137,7 +146,7 @@ h2 {
 
 footer {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--dark-base);
   text-align: center;
   padding: 10px;
   position: end;
