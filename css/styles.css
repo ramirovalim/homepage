@@ -120,21 +120,21 @@ h2 {
 .about-skills ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  /* flex-wrap: wrap; */
+  /* gap: 1em; */
+  justify-content: space-around;
 }
 
 .about-skills ul li {
-  font-size: 2em;
+  font-size: 3em;
   /* background: var(--secondary-color); */
   color: var(--dark-base);
   padding: 5px 10px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  border: 1px solid var(--secondary-color);
+  /* display: flex;
+  flex-direction: row;
+  gap: 5px; */
+  /* border: 1px solid var(--secondary-color); */
 }
 /* End of About Section */
 
