@@ -2,10 +2,12 @@
   --font-family-crimson-pro-regular: "Crimson Pro", serif;
   --font-family-crimson-pro-black: "Crimson Pro Black", serif;
   --font-family-fascinate: "Fascinate", system-ui;
-  --primary-color: #8fb6c2;
-  --secondary-color: #06270b;
-  --tertiary-color: #833f00;
-  /* --quaternary-color: #f7f7f7; -> TODO: light orange */
+  --primary-blue: #8fb6c2;
+  --primary-green: #06270b;
+  --primary-orange: rgb(131, 63, 0);
+  --secondary-blue: #062a35;
+  --secondary-green: #c9de49;
+  --secondary-orange: #ed923d;
   --light-base: #cfcfcf;
   --dark-base: #262626;
 }
@@ -24,48 +26,51 @@ body {
 
 /* HEADER */
 header {
-  background: var(--primary-color);
-  padding: 10px 20px;
+  background: var(--primary-blue);
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1em;
 }
 
 /* Logo - TODO: create css class to specify h1 better */
 h1 {
   font-family: var(--font-family-fascinate);
   font-size: 3em;
-  color: var(--secondary-color);
+  color: var(--primary-green);
 }
 
 h1 a {
+  transition: 0.3s;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-green);
 }
 
 h1 a:hover {
-  font-style: italic;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
 }
 
-/* Navigation Menu */
-header nav ul {
-  font-size: 2em;
-  list-style: none;
+/* Social Nav Menu */
+.social {
+  font-size: 2.4em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: auto;
+  justify-content: center;
   gap: 1em;
   /* TODO: why everything moves on hover? */
 }
 
-header nav ul li a {
-  color: var(--secondary-color);
+.social a {
+  transition: 0.3s;
+  color: var(--primary-green);
   text-decoration: none;
 }
 
-header nav ul li a:hover {
-  font-weight: 600;
+.social a:hover {
+  transition: 0.3s;
+  font-size: 1.1em;
 }
 /* END OF HEADER */
 
@@ -85,7 +90,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  gap: 2em;
+  gap: 1em;
   align-items: start;
 }
 
@@ -93,23 +98,40 @@ h2 {
   width: 100%;
   margin: 10px 0 0 10px;
   grid-row: 1 / 2;
-  border-radius: 13%;
-  box-shadow: -10px -10px 0 0 var(--dark-base);
+  border-radius: 3%;
+  box-shadow: -10px -10px 0 0 rgba(38, 38, 38, 0.8); /* dark-base 80% */
 }
 
 .about-text {
-  width: 100%;
   padding: 20px;
   font-size: 1.3em;
   line-height: 1.5;
+  text-align: justify;
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.75em;
+}
+
+.about button {
+  transition: 0.3s;
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 1em;
+  background: var(--dark-base);
+  color: var(--light-base);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.about button:hover {
+  transition: 0.3s;
+  background: var(--primary-green);
 }
 
 .about-skills {
-  width: 100%;
   grid-column: 1 / span 2;
   padding: 20px;
   display: flex;
@@ -120,21 +142,16 @@ h2 {
 .about-skills ul {
   list-style: none;
   display: flex;
-  /* flex-wrap: wrap; */
-  /* gap: 1em; */
+  flex-wrap: wrap;
+  gap: 1em;
   justify-content: space-around;
 }
 
 .about-skills ul li {
   font-size: 3em;
-  /* background: var(--secondary-color); */
   color: var(--dark-base);
   padding: 5px 10px;
   border-radius: 5px;
-  /* display: flex;
-  flex-direction: row;
-  gap: 5px; */
-  /* border: 1px solid var(--secondary-color); */
 }
 /* End of About Section */
 
@@ -145,8 +162,8 @@ h2 {
 /* End of Projects Section */
 
 footer {
-  background: var(--primary-color);
-  color: var(--dark-base);
+  background: var(--primary-orange);
+  color: var(--light-base);
   text-align: center;
   padding: 0.3em;
 }
