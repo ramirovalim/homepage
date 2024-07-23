@@ -167,36 +167,3 @@ footer {
   text-align: center;
   padding: 0.3em;
 }
-
-/* section#section-404 {
-  text-align: center;
-  margin-top: 100px;
-}
-h2.page-404 {
-  font-family: var(--font-family-crimson-pro-black);
-  font-size: 5em;
-}
-
-p.page-404 {
-  font-family: var(--font-family-crimson-pro-regular);
-  font-size: 1.2em;
-} */
-
-/* Responsive design adjustments */
-/* Responsive Images */
-/* img {
-  max-width: 50%;
-  height: auto;
-} */
-
-/* Responsive Navigation Menu */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header {
-    text-align: left;
-  }
-}
