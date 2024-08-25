@@ -1,29 +1,3 @@
-:root {
-  --font-family-crimson-pro-regular: "Crimson Pro", serif;
-  --font-family-crimson-pro-black: "Crimson Pro Black", serif;
-  --font-family-fascinate: "Fascinate", system-ui;
-  --primary-blue: #8fb6c2;
-  --primary-green: #06270b;
-  --primary-orange: rgb(131, 63, 0);
-  --secondary-blue: #062a35;
-  --secondary-green: #c9de49;
-  --secondary-orange: #ed923d;
-  --light-base: #cfcfcf;
-  --dark-base: #262626;
-}
-
-/* Resetting margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Tipography */
-body {
-  font-family: var(--font-family-crimson-pro-regular);
-}
-
 /* HEADER */
 header {
   background: var(--primary-blue);
