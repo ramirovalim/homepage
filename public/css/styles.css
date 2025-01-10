@@ -73,7 +73,7 @@ h2 {
   margin: 10px 0 0 10px;
   grid-row: 1 / 2;
   border-radius: 3%;
-  box-shadow: -10px -10px 0 0 rgba(38, 38, 38, 0.8); /* dark-base 80% */
+  box-shadow: -10px -10px 0 0 #262626cc; /* dark-base 80% */
 }
 
 .about-text {
